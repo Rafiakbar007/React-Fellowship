@@ -9,5 +9,5 @@ This repository contains:
 
 ## Progress
 
-- Day 1: React setup with Vite
-- Day 2: Components and JSX
+- Day 1: React Introduction
+
