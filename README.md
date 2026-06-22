@@ -10,4 +10,5 @@ This repository contains:
 ## Progress
 
 - Day 1: React Introduction
+- Day 2: React installation and folder structure
 
