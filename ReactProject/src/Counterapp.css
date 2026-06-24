@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(
+    135deg,
+    #667eea,
+    #764ba2
+  );
+}
+
+.card {
+ 
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+
+  background: linear-gradient(
+    135deg,
+    #8b99d764,
+    #c9a0f1b5
+  );
+}
+
+.card h1 {
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+button {
+  border: 2px solid #5572f3;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background: #ccd3f1;
+  border-radius: 10px;
+  color: #5572f3; 
+
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background: #c9a9e9;
+  border: 2px solid #6c4197;
+  color: #6c4197;
+}
+
+.limmitMessage {
+
+  background: #c9a9e9;
+  border: 2px solid #6c4197;
+  margin-top: 20px;
+  color: #6c4197;
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
+
+.container-dark {
+  background: #121212;
+   height: 100vh;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-dark .card {
+  background: #1e1e1e;
+  color: white;
+}
+
+.container-dark button {
+  background: #333;
+  color: white;
+  border-color: #666;
+}
+
+.container-dark .limmitMessage {
+  background: #3b1f1f;
+  color: #ffb3b3;
+  border-color: #ff6b6b;
+}
