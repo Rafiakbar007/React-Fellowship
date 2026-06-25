@@ -1,4 +1,4 @@
-# React Day 6 - Props & Reusable Components
+#  Props & Reusable Components
 
 ## 📌 What I Learned Today
 
