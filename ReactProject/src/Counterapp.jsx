@@ -11,6 +11,7 @@ function Counterapp (){
     //let counter = 5
 
     let mode = "container";
+    
     if (darkMode) {
         mode = "container-dark"
     }

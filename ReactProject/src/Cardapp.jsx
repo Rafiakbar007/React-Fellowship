@@ -3,10 +3,6 @@ import Cardcomp from "./components/Cardcomp"
 
 function Cardapp () {
 
-
-
-
-
     return (
 
     <div className="bg-indigo-600 h-dvh w-dvw flex justify-center items-center gap-5">
