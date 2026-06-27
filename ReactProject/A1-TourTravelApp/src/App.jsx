@@ -1,13 +1,32 @@
 
 import './App.css'
+import Navbar from "./components/Navbar"
+import Hero from "./components/Hero"
+import DestinationSection from "./components/DestinationSection"
+import PackageSection from "./components/PackageSection"
+import Testimonials from "./components/Testimonials"
+import Footer from "./components/Footer"
+import destinations from "./data/destinations"
+import packages from "./data/packages"
+import testimonials from "./data/testimonials"
+
+
+
 
 function App() {
  
 
   return (
-    <>
-      <h1 className='bg-red-300'>Rafia</h1>
-    </>
+    <div>
+
+      <Navbar />
+      <Hero />
+      <DestinationSection destinations={destinations}/>
+      <PackageSection packages={packages}/>
+      <Testimonials reviews={testimonials} />
+      <Footer />
+
+    </div>
   )
 }
 
