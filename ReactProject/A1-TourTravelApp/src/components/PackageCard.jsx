@@ -4,7 +4,13 @@ function PackageCard({ pkgdata }) {
 
       {/* Image Placeholder */}
       <div className="h-48 bg-gray-300 rounded-lg mb-4 flex items-center justify-center">
-        Tour Image
+        
+        <img
+        src={pkgdata.destImage}
+        alt={pkgdata.name}
+        className="w-full h-48 object-cover rounded-lg"
+      />
+
       </div>
 
       {/* Package Title */}
