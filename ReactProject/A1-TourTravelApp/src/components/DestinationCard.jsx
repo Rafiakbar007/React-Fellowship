@@ -2,9 +2,15 @@ function DestinationCard({ destination }) {
   return (
     <div className="bg-white rounded-xl shadow-lg p-4">
       
-      {/* Image Placeholder */}
+      {/* Image  */}
       <div className="h-48 bg-gray-300 rounded-lg mb-4 flex items-center justify-center">
-        Image
+        
+        <img
+        src={destination.destImage}
+        alt={destination.name}
+        className="w-full h-48 object-cover rounded-lg"
+      />
+
       </div>
 
       {/* Destination Name */}
