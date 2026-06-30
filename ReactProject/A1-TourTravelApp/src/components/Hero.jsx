@@ -1,13 +1,16 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import Area1 from "../assets/Area1.png";
 import Area2 from "../assets/Area2.png";
 import Area3 from "../assets/Area3.png";
 
+import Navbar from "./Navbar";
+
 function Hero() {
   const images = [Area1, Area2, Area3];
 
   const [currentImage, setCurrentImage] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
 
   const nextImage = () => {
     setCurrentImage((currentImage + 1) % images.length);
@@ -19,15 +22,49 @@ function Hero() {
     );
   };
 
+  useEffect(() => {
+
+    if (isPaused)  return ;
+
+  const interval = setInterval(() => {
+    setCurrentImage(
+      (prev) => (prev + 1) % images.length
+    );
+  }, 2000);
+
+  return () => clearInterval(interval);
+}, [isPaused]);
+
+
+
   return (
+
+
     <section
-      className="relative h-[80vh] bg-cover bg-center"
-      style={{
-        backgroundImage: `url(${images[currentImage]})`,
-      }}
+      className="relative h-[95vh] bg-cover bg-center "
+      
+      onMouseEnter={()=>{setIsPaused(true)}}
+      onMouseLeave={()=>{setIsPaused(false)}}
     >
+
+      {/*style={{
+        backgroundImage: `url(${images[currentImage]})`, transform: `${linear}`
+      }}*/}
+
+<div className="absolute top-0 left-0 w-full z-20">
+  <Navbar />
+</div>
+
+<img
+  src={images[currentImage]}
+  alt="Hero"
+  className="absolute inset-0 w-full h-full object-cover "
+/>
+
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/40 pointer-events-none"></div>
+      <div className="absolute inset-0 bg-black/60 pointer-events-none"></div>
+
+
 
       {/* Hero Content */}
       <div className="relative z-10 h-full flex flex-col justify-center items-center text-center text-white px-4">
@@ -39,7 +76,7 @@ function Hero() {
           Discover the beauty of the north
         </p>
 
-        <button className="bg-blue-600 px-6 py-3 rounded-lg hover:bg-blue-700 transition">
+        <button className=" bg-white/25 px-6 py-3 text-black font-semibold rounded-lg hover:bg-white/50 transition">
           Explore Tours
         </button>
       </div>
@@ -47,7 +84,7 @@ function Hero() {
       {/* Left Arrow */}
       <button
         onClick={prevImage}
-        className="absolute z-20 left-4 top-1/2 -translate-y-1/2 bg-white/80 px-4 py-2 rounded-full text-xl hover:bg-white"
+        className="absolute z-20 left-4 top-1/2 -translate-y-1/2 bg-white/50 px-4 py-2 rounded-full text-xl hover:bg-white/20"
       >
         
       <svg
@@ -64,7 +101,7 @@ function Hero() {
       {/* Right Arrow */}
       <button
         onClick={nextImage}
-        className="absolute z-20 right-4 top-1/2 -translate-y-1/2 bg-white/80 px-4 py-2 rounded-full text-xl hover:bg-white"
+        className="absolute z-20 right-4 top-1/2 -translate-y-1/2 bg-white/50 px-4 py-2 rounded-full text-xl hover:bg-white/20"
       >
         
       <svg
@@ -80,6 +117,20 @@ className="rotate-180"
  </svg>
    
       </button>
+
+<div className="absolute bottom-5 left-1/2 -translate-x-1/2 flex gap-3 z-20">
+  {images.map((_, index) => (
+    <div
+      key={index}
+      className={`w-3 h-3 rounded-full ${
+        currentImage === index
+          ? "bg-white"
+          : "bg-white/50"
+      }`}
+    ></div>
+  ))}
+</div>
+
     </section>
   );
 }

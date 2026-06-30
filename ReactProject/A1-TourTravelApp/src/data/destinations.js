@@ -1,3 +1,5 @@
+
+
 import HunzaImage from "../assets/HunzaImage.png"
 import SawatImage from "../assets/SawatImage.png"
 import SkarduImage from "../assets/SkarduImage.png"
@@ -8,7 +10,8 @@ const destinations = [
     id: 1,
     name: "Hunza",
     description: "Beautiful valley in Gilgit Baltistan",
-    destImage: HunzaImage
+    destImage: HunzaImage,
+    
   },
 
   {

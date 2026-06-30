@@ -1,32 +1,32 @@
+
+
+
 function DestinationCard({ destination }) {
   return (
-    <div className="bg-white rounded-xl shadow-lg p-4">
-      
-      {/* Image  */}
-      <div className="h-48 bg-gray-300 rounded-lg mb-4 flex items-center justify-center">
-        
-        <img
+    <div className="bg-gray-300 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-transform duration-500 transform-gpu">
+
+      {/* Image */}
+      <img
         src={destination.destImage}
         alt={destination.name}
-        className="w-full h-48 object-cover rounded-lg"
+        className="w-full h-48 object-cover"
       />
 
+      {/* Content */}
+      <div className="p-4">
+        
+        <h3 className="text-xl font-bold mb-2">
+          {destination.name}
+        </h3>
+
+        <p className="text-gray-600 mb-4">
+          {destination.description}
+        </p>
+
+       <button className="bg-blue-600 text-white px-4 py-2 rounded-lg border-2 border-blue-600 hover:bg-white hover:text-blue-600 transition-all duration-300">
+  Explore
+</button>
       </div>
-
-      {/* Destination Name */}
-      <h2 className="text-2xl font-bold mb-2">
-        {destination.name}
-      </h2>
-
-      {/* Description */}
-      <p className="text-gray-600 mb-4">
-        {destination.description}
-      </p>
-
-      {/* Button */}
-      <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
-        Explore
-      </button>
 
     </div>
   );
