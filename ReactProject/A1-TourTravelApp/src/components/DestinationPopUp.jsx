@@ -5,7 +5,7 @@ function DestinationPopUp ({destination, closepopup}) {
 
 
     return (
-            <div>
+            
 
        <div className="fixed inset-0 bg-black/65 flex justify-center items-center">
 
@@ -56,7 +56,7 @@ function DestinationPopUp ({destination, closepopup}) {
   </div>
 
 </div>
-            </div>
+           
     )
 }
 

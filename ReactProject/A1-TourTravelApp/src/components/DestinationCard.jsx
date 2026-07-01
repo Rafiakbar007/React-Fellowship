@@ -9,14 +9,20 @@ function DestinationCard({ destination }) {
  const [showDestinationPopUp, setShowDestinationPopUp] = useState(false)
 
   return (
-    <div className="bg-gray-300 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-transform duration-500 transform-gpu">
+    <div className="bg-gray-300 rounded-xl shadow-lg  hover:shadow-2xl transition-transform duration-500 ">
 
       {/* Image */}
+      <div className="h-48 bg-gray-300 rounded-lg mb-4 flex items-center justify-center">
+
       <img
-        src={destination.destImage}
-        alt={destination.name}
-        className="w-full h-48 object-cover"
-      />
+              src={destination.destImage}
+              alt={destination.name}
+              className="w-full h-48 object-cover rounded-lg"
+            />
+
+      </div>
+
+     
 
       {/* Content */}
       <div className="p-4">
