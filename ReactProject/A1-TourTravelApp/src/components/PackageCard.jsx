@@ -1,8 +1,18 @@
+
+
+
+
 function PackageCard({ pkgdata }) {
+
+
+
+
   return (
+
+
     <div className="bg-white rounded-xl shadow-lg p-4">
 
-      {/* Image Placeholder */}
+      
       <div className="h-48 bg-gray-300 rounded-lg mb-4 flex items-center justify-center">
         
         <img
