@@ -14,7 +14,7 @@ function DestinationSection({ destinations }) {
 
    <section className="mx-auto py-12 px-4">
 
-  <h2 className="text-4xl font-bold text-center mb-8">
+  <h2 className="font-bold text-center mb-8 text-2xl md:text-5xl lg:text-6xl">
     Popular Destinations
   </h2>
 

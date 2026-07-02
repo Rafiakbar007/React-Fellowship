@@ -12,7 +12,7 @@ function PackagePopUp ({pkgdata,closePopUpBtn}) {
 <div className="fixed inset-0 bg-black/65 flex justify-center items-center">
 
   <div
-    className="relative rounded-xl w-96 overflow-hidden"
+    className="relative rounded-xl overflow-hidden w-full max-w-md mx-4"
     style={{
       backgroundImage: `url(${pkgdata.destImage})`,
       backgroundSize: "cover",
@@ -54,7 +54,7 @@ function PackagePopUp ({pkgdata,closePopUpBtn}) {
         <strong>Highlights:</strong> {pkgdata.highlights}
       </p>
 
-     <div className="gap-6">
+     <div className="flex gap-2 ">
 
  <button
         onClick={closePopUpBtn}

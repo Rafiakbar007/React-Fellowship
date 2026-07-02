@@ -10,7 +10,7 @@ function DestinationPopUp ({destination, closepopup}) {
        <div className="fixed inset-0 bg-black/65 flex justify-center items-center">
 
   <div
-    className="relative rounded-xl w-96 overflow-hidden"
+    className="relative rounded-xl overflow-hidden w-full max-w-md mx-4"
     style={{
       backgroundImage: `url(${destination.destImage})`,
       backgroundSize: "cover",

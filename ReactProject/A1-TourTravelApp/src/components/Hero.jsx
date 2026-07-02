@@ -62,7 +62,7 @@ function Hero() {
 />
 
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/60 pointer-events-none"></div>
+      <div className="absolute inset-0 bg-black/50 pointer-events-none"></div>
 
 
 
@@ -76,7 +76,7 @@ function Hero() {
           Discover the beauty of the north
         </p>
 
-        <button className=" bg-white/25 px-6 py-3 text-black font-semibold rounded-lg hover:bg-white/50 transition">
+        <button className=" bg-black/50 px-6 py-3 text-white font-semibold rounded-lg hover:bg-white/50 transition">
           Explore Tours
         </button>
       </div>

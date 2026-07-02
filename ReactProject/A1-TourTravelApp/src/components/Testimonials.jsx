@@ -4,7 +4,7 @@ function Testimonials({ reviews }) {
   return (
     <section className="max-w-6xl mx-auto py-12 px-4">
 
-      <h2 className="text-4xl font-bold text-center mb-8">
+      <h2 className="font-bold text-center mb-8 text-2xl md:text-5xl lg:text-6xl">
         What Our Travelers Say
       </h2>
 
