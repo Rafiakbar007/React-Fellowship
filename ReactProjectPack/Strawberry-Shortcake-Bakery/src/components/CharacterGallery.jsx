@@ -72,7 +72,7 @@ function CharacterGallery({ theme }) {
             border: `4px solid ${theme.secondary}`,
           }}
         >
-         <div>
+         <div className="w-1/2 h-full">
            <img
             src={characters[currentSlide].image}
             alt={characters[currentSlide].name}
@@ -86,7 +86,7 @@ function CharacterGallery({ theme }) {
 
          </div>
 
-         <div>
+         <div className=" w-1/2">
  <h3
             className="
               text-2xl
@@ -136,12 +136,14 @@ function CharacterGallery({ theme }) {
                 font-medium
                 transition-all
                 hover:scale-105
+                
               "
               style={{
                 backgroundColor: theme.primary,
               }}
+
             >
-              ← Previous
+              ← 
             </button>
 
             <button
@@ -165,7 +167,7 @@ function CharacterGallery({ theme }) {
                 backgroundColor: theme.primary,
               }}
             >
-              Next →
+               →
             </button>
           </div>
 
@@ -191,7 +193,7 @@ function CharacterGallery({ theme }) {
                   backgroundColor:
                     currentSlide === index
                       ? theme.primary
-                      : "#d1d5db",
+                      : theme.secondary,
                   transform:
                     currentSlide === index
                       ? "scale(1.3)"

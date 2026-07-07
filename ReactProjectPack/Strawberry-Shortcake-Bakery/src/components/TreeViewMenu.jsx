@@ -7,7 +7,7 @@ function TreeViewMenu({ item }) {
     <div className="relative">
       <div
         className="
-          px-4
+          px-3
           py-2
           rounded-lg
           cursor-pointer
@@ -19,6 +19,8 @@ function TreeViewMenu({ item }) {
           flex
           items-center
           gap-2
+          sm:px-4
+          sm:gap-4
         "
         onClick={() => setShowChildren(!showChildren)}
       >

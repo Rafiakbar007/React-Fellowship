@@ -8,12 +8,13 @@ function TreeView({ theme }) {
     <nav
       className="
         flex
+        justify-between
         items-center
-        gap-6
-        px-4
         py-2
         rounded-2xl
         shadow-lg
+        md:gap-6
+        md:px-4
       "
       style={{
         backgroundColor: theme.secondary,
