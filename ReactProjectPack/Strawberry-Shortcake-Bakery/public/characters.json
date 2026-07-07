@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Strawberry Shortcake",
+    "image": "/characters/strawberry.jpg",
+    "description": "A cheerful baker who loves creating delicious berry treats."
+  },
+
+  {
+    "id": 2,
+    "name": "Blueberry Muffin",
+    "image": "/characters/blueberrymuffin.jpg",
+    "description": "Smart and book-loving, always ready to help friends."
+  },
+
+  {
+    "id": 3,
+    "name": "Lemon Meringue",
+    "image": "/characters/lemonberry.jpg",
+    "description": "Stylish and energetic with a bright personality."
+  },
+
+  {
+    "id": 4,
+    "name": "Orange Blossom",
+    "image": "/characters/orangeberry.jpg",
+    "description": "Creative and artistic, bringing beauty everywhere."
+  },
+
+  {
+    "id": 5,
+    "name": "Raspberry Torte",
+    "image": "/characters/raspberry.jpg",
+    "description": "Confident and talented with a passion for fashion."
+  }
+]
+

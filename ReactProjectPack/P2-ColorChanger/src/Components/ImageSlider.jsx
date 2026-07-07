@@ -19,6 +19,7 @@ function ImageSlider({ url, limit }) {
       setLoading(false);
     }
   }
+  
 
   useEffect(() => {
     fetchImages();

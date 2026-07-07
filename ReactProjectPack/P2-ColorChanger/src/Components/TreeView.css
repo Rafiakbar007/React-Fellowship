@@ -1,0 +1,72 @@
+
+/* TreeMenu.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f4f6f9;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tree-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 25px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.tree-title {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+.menu-item {
+  margin: 8px 0;
+}
+
+.menu-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 12px 16px;
+
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.menu-label:hover {
+  background: #e8f0fe;
+  transform: translateX(4px);
+}
+
+.menu-text {
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+.menu-icon {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2563eb;
+}
+
+.children-container {
+  margin-left: 25px;
+  margin-top: 8px;
+  border-left: 2px solid #dbeafe;
+  padding-left: 15px;
+}

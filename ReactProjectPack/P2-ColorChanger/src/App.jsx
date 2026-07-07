@@ -4,6 +4,8 @@ import { useState } from "react"
 import "./App.css"
 import StarRating from './Components/StarRating'
 import ImageSlider from './Components/ImageSlider'
+import LoadMore from './Components/LoadMore'
+import TreeView from './Components/TreeView'
 
 
 function ColorChanger() {
@@ -88,7 +90,9 @@ function ColorChanger() {
       </div>
 
       <StarRating noOfStars={6}/>
+      <LoadMore />
       <ImageSlider url={'https://picsum.photos/v2/list'} limit={'5'}/>
+      <TreeView />
 
     </div>
   )
