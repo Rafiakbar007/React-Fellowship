@@ -21,7 +21,15 @@ const menuData = [
       },
       {
         id: 23,
-        label: "Lemon",
+        label: "Lemonberry",
+      },
+      {
+        id: 24,
+        label: "Orangeberry",
+      },
+      {
+        id: 25,
+        label: "Raspberry",
       },
     ],
   },
@@ -33,6 +41,20 @@ const menuData = [
       {
         id: 31,
         label: "Cakes",
+         children: [
+              {
+                id: 311,
+                label: "Cakes",
+              },
+              {
+                id: 312,
+                label: "Cookies",
+              },
+              {
+                id: 313,
+                label: "Muffins",
+              },
+            ],
       },
       {
         id: 32,
